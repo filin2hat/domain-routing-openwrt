@@ -4,8 +4,6 @@
 
 check_repo() {
     printf "\033[32;1mChecking OpenWrt repo availability...\033[0m\n"
-    printf "\033[32;1mChecking OpenWrt repo availability...\033[0m\n"
-    printf "\033[32;1mChecking OpenWrt repo availability...\033[0m\n"
     opkg update | grep -q "Failed to download" && printf "\033[32;1mopkg failed. Check internet or date. Command for force ntp sync: ntpd -p ptbtime1.ptb.de\033[0m\n" && exit 1
 }
 
