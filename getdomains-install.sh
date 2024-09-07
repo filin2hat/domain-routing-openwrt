@@ -2,11 +2,9 @@
 
 #set -x
 
-test_print() {
-    printf "\033[32;1mFORK FROM ITDOG\033[0m\n"
-}
-
 check_repo() {
+    printf "\033[32;1mChecking OpenWrt repo availability...\033[0m\n"
+    printf "\033[32;1mChecking OpenWrt repo availability...\033[0m\n"
     printf "\033[32;1mChecking OpenWrt repo availability...\033[0m\n"
     opkg update | grep -q "Failed to download" && printf "\033[32;1mopkg failed. Check internet or date. Command for force ntp sync: ntpd -p ptbtime1.ptb.de\033[0m\n" && exit 1
 }
@@ -913,8 +911,6 @@ if [ "$VERSION_ID" -ne 23 ]; then
 fi
 
 printf "\033[31;1mAll actions performed here cannot be rolled back automatically.\033[0m\n"
-
-test_print
 
 check_repo
 
