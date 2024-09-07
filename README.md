@@ -9,4 +9,4 @@ https://itdog.info/tochechnaya-marshrutizaciya-po-domenam-na-routere-s-openwrt/
 
 ### Usage:
 
-sh <(wget -O - https://github.com/filin2hat/domain-routing-openwrt/blob/main/getdomains-install.sh)
+sh <(wget -O - https://raw.githubusercontent.com/filin2hat/domain-routing-openwrt/main/getdomains-install.sh)
